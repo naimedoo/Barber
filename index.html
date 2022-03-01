@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Polices de caractère -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" 
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+   integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+   crossorigin="anonymous">
+   <!-- Jquery -->
+   <script src="https://code.jquery.com/jquery-3.6.0.js" 
+   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+   crossorigin="anonymous"></script>
+
+   
+
+   <!-- greenStock -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+   <!-- feuille de style -->
+   <link rel="stylesheet" href="CSS/style.css">
+   <link rel="stylesheet" href="CSS/baseMedia.css">
+
+  <title>Barber</title>
+</head>
+
+<body>
+  <!-- Accueil -->
+  <header id="ACCUEIL">
+  
+
+    <nav id="navigation">
+
+      <a href="#Accueil" class="lienNav" onclick="toggleNav()">Accueil</a>
+      <a href="#Valeur" class="lienNav"onclick="toggleNav()">Nos valeurs</a>
+      <a href="#Tarif" class="lienNav"onclick="toggleNav()">Nos tarifs</a>
+      <a href="#Contact" class="lienNav"onclick="toggleNav()">Contact</a>
+      <a class="icon" id="icon"onclick="toggleNav()"><i class="fas fa-bars"></i></a>
+    </nav>
+    <h1>Votre Barbier Traditionnel</h1>
+  
+
+    <h2>Rasoir, Peigne et savoir faire.</h2>
+    <a href="#section about" id="arrow"><i class="fas fa-cut"></i></a>
+
+
+  </header>  
+
+<!-- Section about -->
+  <section id="section about"class="section-about">
+
+<div class="centerH">
+  <h2 class="titreAbout">
+    Découvrez nos valeurs.
+  </h2>
+</div>
+<div class="row">
+  <div class="col-1-of-2">
+    <h3 class="sousTitreAbout">
+      Coupez les cheveux comme il y a 100 ans.
+    </h3>
+    <p class="paragraphe">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+      Voluptatem a, incidunt enim aliquid totam explicabo rerum magni facilis id quam aspernatur harum ullam, 
+      culpa dolore consectetur. 
+      Natus animi quidem dolores!
+    </p>
+    <h3 class="sousTitreAbout">
+      L'art de tailler une barbe.
+    </h3>
+    <p class="paragraphe">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+      Voluptatem a, incidunt enim aliquid totam explicabo rerum magni facilis id quam aspernatur harum ullam, 
+      culpa dolore consectetur. 
+      Natus animi quidem dolores!
+    </p>
+  </div>
+   <div class="col-1-of-2">
+    <div class="composition">
+      <img src="ressources/3imgs1.jpg" alt="photo barbier 1" class="composition_photo composition_photo--1">
+      <img src="ressources/3imgs2.jpeg" alt="photo barbier 2" class="composition_photo composition_photo--2">
+      <img src="ressources/3imgs3.jpg" alt="photo barbier 3" class="composition_photo composition_photo--3">
+    </div> 
+  </div>
+</div>
+</section>  
+
+<!-- section Tarifs -->
+   <section id="tarifs">
+<h2>
+  Nos Tarifs
+</h2>
+
+<div id="containerFlex">
+  <div class="FlexCards">
+    <div class="head">
+      <p>Dégradé</p>
+    </div>
+    <div class="contenu">Huile</div>
+    <div class="contenu">Crème</div>
+    <div class="contenu">Shampoing</div>
+    <div class="contenu">Dégradé</div>
+    <div class="prix">
+      <p>10€</p>
+    </div>
+  </div>
+  <div class="FlexCards">
+    <div class="head">
+      <p>Barbe</p>
+    </div>
+    <div class="contenu">Huile</div>
+    <div class="contenu">Crème</div>
+    <div class="contenu">Shampoing</div>
+    <div class="contenu">Dégradé</div>
+    <div class="prix">
+      <p>25€</p>
+    </div>
+  </div>
+  <div class="FlexCards">
+    <div class="head">
+      <p>La Totale</p>
+    </div>
+    <div class="contenu">Huile</div>
+    <div class="contenu">Crème</div>
+    <div class="contenu">Shampoing</div>
+    <div class="contenu">Dégradé</div>
+    <div class="prix">
+      <p>35€</p>
+    </div>
+  </div>
+</div>
+
+
+</section>  
+
+<!-- section Phrases Slide -->
+<section class="phrasesSlide">
+  <div class="cadre">
+    <div class="centre">
+    <div class="carousel">
+      <div class="changeHidden">
+        <div class="contenant">
+          <div class="element">"Exceptionnel."</div>
+          <div class="element">"Un service impeccable."</div>
+          <div class="element">"Barbe parfaitement taillé."</div>
+          <div class="element">"Des produits de qualités."</div>
+          <div class="element">"Exceptionnel."</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+
+</section>
+<!-- section equipe -->
+<section id="equipe">
+
+  <h3>Il est temps de rencontrer l'équipe</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Nisi adipisci veritatis quisquam?.</p>
+
+     <div class="containerFlexTeam">
+       <div class="Team">
+         <div class="TeamPic Pic1"></div> 
+               <div class="sousTxt">
+             <h4>Olivier Barber</h4>
+             <p>Spécialiste de la barbe</p>
+            </div>
+        </div>
+        <div class="Team">
+        <div class="TeamPic Pic2"></div>
+          <div class="sousTxt">
+            <h4>peter degraded</h4>
+            <p>le pro du dégradé</p>
+          </div>
+        </div>
+       <div class="Team">
+          <div class="TeamPic Pic3"></div>
+            <div class="sousTxt">
+              <h4>laurie smith</h4>
+              <p>main de fée</p>
+            </div>
+        </div>
+
+     </div>
+</section>
+
+<!-- contact section -->
+<section id="contact">
+  <h2>Téléphone</h2>
+  <h3>0232 986 78654</h3>
+
+  <div class="FlexMedias">
+    <div class="medias">
+      <a href="https//www.instagram.com" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+
+  
+  <div class="FlexMedias">
+    <div class="medias">
+      <a href="https//www.twitter.com" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <div class="FlexMedias">
+      <div class="medias">
+        <a href="https//www.facebook.com" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+  
+    </div>
+  </div>
+  </div>
+
+</section>
+
+<script src="js/app.js"></script>
+<script src="js/greensock.js"></script>
+</body>
+
+</html>
